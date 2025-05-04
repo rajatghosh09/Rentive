@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+  <!-- swiper link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+  />
+
+  <!-- bootstrap cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- aboutus extarnal css -->
+  <link rel="stylesheet" type="text/css" href="aboutus.css" !importent />
+
+  <title>Rentive</title>
+</head>
+
+<body>
+  <!-- header & nav -->
+  <header class="header">
+    <div class="navcontainer">
+      <nav class="navbox">
+        <div class="brand">
+          <a href="index.html">
+            <img src="image/Logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="navlinks">
+          <li><a href="index.html" target="_self">Home</a></li>
+          <li><a class="active" href="aboutus.html" target="_self">About Us</a></li>
+          <li><a href="vehicles.html" target="_self">Vehicles</a></li>
+          <li><a href="ourservice.html" target="_self">Service</a></li>
+          <li><a href="blog.html" target="_self">Blog</a></li>
+          <li><a href="contactus.html" target="_self">Contact Us</a></li>
+        </ul>
+        <div>
+          <a href="#" class="log-btn">
+            <i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- banner -->
+    <section class="banner-img">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="banner-content">
+              <h1>About US</h1>
+              <p>The Future of Car Rental is Here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- aboutus section -->
+    <section class="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col50">
+            <div class="about-us-details">
+              <div class="about-us-heading">About Us</div>
+              <h4 class="sub-heading">
+                The Largest Car Rental Network Across the Globe
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat
+              </p>
+
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat
+              </p>
+            </div>
+          </div>
+          <div class="col50">
+            <div class="about-us-right">
+              <figure class="long">
+                <img src="image/your_comfort_img1 1.png" alt="car img" />
+              </figure>
+              <div class="right-section">
+                <div class="experience">
+                  <div>
+                    10+ Years
+                    <span>EXPERIENCE</span>
+                  </div>
+                </div>
+                <figure>
+                  <img src="image/your_comfort_img2 1.png" alt="car img" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- logos -->
+    <section class="logo">
+      <div class="container logo-container">
+        <div class="logos">
+          <div class="logos-slide">
+            <div class="car-logo">
+              <div class="Large">
+                <figure>
+                  <img class="logos-car" src="images/lexus.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="small">
+                <figure>
+                  <img class="logos-car" src="images/mer.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="medium">
+                <figure>
+                  <img class="logos-car" src="images/jaguar.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="small">
+                <figure>
+                  <img class="logos-car" src="images/bugatti.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="small">
+                <figure>
+                  <img class="logos-car" src="images/honda.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="small">
+                <figure>
+                  <img class="logos-car" src="images/chevrolet.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="small">
+                <figure>
+                  <img class="logos-car" src="images/acura.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="small">
+                <figure>
+                  <img class="logos-car" src="images/bmw.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+            <div class="car-logo">
+              <div class="medium">
+                <figure>
+                  <img class="logos-car" src="images/toyota.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our mission section -->
+    <section class="our-mission">
+      <div class="container">
+        <div class="row">
+          <div class="col50">
+            <div class="our-mission-details">
+              <div class="our-mission-heading">Our mission</div>
+              <h4 class="sub-heading">
+                Sell your car at a fair price. Get started with us today.
+              </h4>
+              <p>
+                Our mission is to make car rental easy, accessible, and
+                affordable for everyone. We believe that renting a car should
+                be a hassle-free experience, and we're dedicated to ensuring
+                that every customer finds the perfect vehicle for their
+                journey.
+              </p>
+              <ul class="features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Explore a wide
+                  range of flexible rental options to suit your needs
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Comprehensive
+                  insurance coverage for complete peace of mind
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> 24/7 customer
+                  support for assistance anytime, anywhere
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col50">
+            <div class="our-mission-rightup">
+              <figure class="upper">
+                <img src="image/img-3 1.png" alt="" class="img1" />
+                <img src="image/img-4 1.png" alt="" class="img2" />
+              </figure>
+              <div class="our-mission-down">
+                <figure class="down">
+                  <img src="image/img-1 1.png" alt="" class="img3" />
+                  <img src="image/img-2 1.png" alt="" class="img4" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- starts section -->
+    <section class="stats-section">
+      <div class="stats-container">
+        <div class="stat-item">
+          <h2 class="counter" data-toggle="counter-up">450</h2>
+          <p><span>Global</span><span>Branches</span></p>
+        </div>
+        <div class="stat-item">
+          <h2 class="counter" data-toggle="counter-up">2900</h2>
+          <p><span>Destination</span><span>Collaboration</span></p>
+        </div>
+        <div class="stat-item">
+          <h2 class="counter" data-toggle="counter-up">200</h2>
+          <p><span>Years</span><span>Experience</span></p>
+        </div>
+        <div class="stat-item">
+          <h2 class="counter" data-toggle="counter-up">1600</h2>
+          <p><span>Happy</span><span>Customer</span></p>
+        </div>
+        <div class="stat-item">
+          <h2 class="counter" data-toggle="counter-up">1500</h2>
+          <p><span>User</span><span>Account</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- our commited section -->
+
+    <section class="Our-committed">
+      <div class="container">
+        <div class="row Our-committed-row">
+          <div class="col50">
+            <div class="Our-committed-right">
+              <figure class="upper">
+                <img src="image/intro-video-bg 1.png" alt="" class="img6" />
+                <img src="image/about-img-1 1.png" alt="" class="img5" />
+              </figure>
+            </div>
+          </div>
+          <div class="col50">
+            <div class="Our-committed-details">
+              <div class="Our-committed-heading">Our committed</div>
+              <h4 class="sub-heading">
+                Carento offers clear pricing and 24/7 great support.
+              </h4>
+              <p>
+                We are committed to offering transparent pricing with no
+                hidden fees, comprehensive insurance options for peace of
+                mind, and 24/7 customer support to assist you whenever you
+                need it. At Carento, your satisfaction is our top priority.
+              </p>
+              <ul class="features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Explore a wide
+                  range of flexible rental options to suit your needs
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Comprehensive
+                  insurance coverage for complete peace of mind
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> 24/7 customer
+                  support for assistance anytime, anywhere
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- choose us -->
+    <section class="choose-us">
+      <div class="container">
+        <div class="choose-us-details">
+          <div class="choose-us-heading">Why choose us</div>
+          <h4 class="sub-heading">The Advantage of Renting Us</h4>
+        </div>
+
+        <div class="row choose-us-row">
+          <div class="col25">
+            <div class="choose-us-left" data-aos="fade-right">
+              <div class="left-boxes">
+                <span>Diverse Fleet</span>
+                <p>A wide range of cars for all needs.</p>
+              </div>
+              <div class="left-boxes">
+                <span>Affordable Rates</span>
+                <p>Competitive pricing with no hidden fees.</p>
+              </div>
+              <div class="left-boxes">
+                <span>Flexible Rentals</span>
+                <p>Daily, weekly, and long-term options available.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col50">
+            <div class="choose-us-img" data-aos="fade-up">
+              <img src="images/chooseusback.png" alt="back" />
+              <div class="front-img">
+                <figure>
+                  <img src="images/chooseusfront.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="col25">
+            <div class="choose-us-right" data-aos="fade-left">
+              <div class="right-boxes">
+                <span>24/7 Support</span>
+                <p>Always available to assist you anytime.</p>
+              </div>
+              <div class="right-boxes">
+                <span>Safety First</span>
+                <p>All cars are inspected for your safety.</p>
+              </div>
+              <div class="right-boxes">
+                <span>Loyalty Rewards</span>
+                <p>Earn exclusive discounts and special offers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- change column location section from 991px-->
+        <div class="row choose-us-row col-change-row">
+          <div class="col25">
+            <div class="choose-us-left" data-aos="fade-right">
+              <div class="left-boxes">
+                <span>Diverse Fleet</span>
+                <p>A wide range of cars for all needs.</p>
+              </div>
+              <div class="left-boxes">
+                <span>Affordable Rates</span>
+                <p>Competitive pricing with no hidden fees.</p>
+              </div>
+              <div class="left-boxes">
+                <span>Flexible Rentals</span>
+                <p>Daily, weekly, and long-term options available.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col25">
+            <div class="choose-us-right" data-aos="fade-left">
+              <div class="right-boxes">
+                <span>24/7 Support</span>
+                <p>Always available to assist you anytime.</p>
+              </div>
+              <div class="right-boxes">
+                <span>Safety First</span>
+                <p>All cars are inspected for your safety.</p>
+              </div>
+              <div class="right-boxes">
+                <span>Loyalty Rewards</span>
+                <p>Earn exclusive discounts and special offers.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col50">
+            <div class="choose-us-img" data-aos="fade-up">
+              <img src="images/chooseusback.png" alt="back" />
+              <div class="front-img">
+                <figure>
+                  <img src="images/chooseusfront.png" alt="car" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-details">
+          <div class="testimonials-heading">
+            Testimonials
+          </div>
+          <h4 class="sub-heading">What they say about us?</h4>
+        </div>
+
+        <div class="row testimonials-row">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="col33 swiper-slide">
+                <div class="testimonials-content">
+                  <div class="testimonials-content-details">
+                    <div class="content-heading">
+                      Best Price Assured
+                    </div>
+                    <span class="content-rating">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </span>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design,
+                      publishing, and web development to fill empty spaces in a layout that does
+                      not
+                      yet
+                      have content.</p>
+                    <span class="reviewer">TITHI, KOLKATA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col33 swiper-slide">
+                <div class="testimonials-content">
+                  <div class="testimonials-content-details">
+                    <div class="content-heading">
+                      Smooth Car Transport
+                    </div>
+                    <span class="content-rating">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </span>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design,
+                      publishing, and web development to fill empty spaces in a layout that does
+                      not
+                      yet
+                      have content.</p>
+                    <span class="reviewer">TITHI, KOLKATA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col33 swiper-slide">
+                <div class="testimonials-content">
+                  <div class="testimonials-content-details">
+                    <div class="content-heading">
+                      Clean and Comfortable
+                    </div>
+                    <span class="content-rating">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </span>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design,
+                      publishing, and web development to fill empty spaces in a layout that does
+                      not
+                      yet
+                      have content.</p>
+                    <span class="reviewer">TITHI, KOLKATA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col33 swiper-slide">
+                <div class="testimonials-content">
+                  <div class="testimonials-content-details">
+                    <div class="content-heading">
+                      Best Price Assured
+                    </div>
+                    <span class="content-rating">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </span>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design,
+                      publishing, and web development to fill empty spaces in a layout that does
+                      not
+                      yet
+                      have content.</p>
+                    <span class="reviewer">TITHI, KOLKATA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col33 swiper-slide">
+                <div class="testimonials-content">
+                  <div class="testimonials-content-details">
+                    <div class="content-heading">
+                      Smooth Car Transport
+                    </div>
+                    <span class="content-rating">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </span>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design,
+                      publishing, and web development to fill empty spaces in a layout that does
+                      not
+                      yet
+                      have content.</p>
+                    <span class="reviewer">TITHI, KOLKATA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col33 swiper-slide">
+                <div class="testimonials-content">
+                  <div class="testimonials-content-details">
+                    <div class="content-heading">
+                      Clean and Comfortable
+                    </div>
+                    <span class="content-rating">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </span>
+                    <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design,
+                      publishing, and web development to fill empty spaces in a layout that does
+                      not
+                      yet
+                      have content.</p>
+                    <span class="reviewer">TITHI, KOLKATA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination sapce"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- book a car -->
+    <section class="book-car">
+      <div class="book-background">
+        <figure>
+          <img class="background-car" src="images/bookcar.png" alt="car" />
+          <img src="images/bookcarlayer.png" alt="">
+        </figure>
+      </div>
+
+      <div class="container">
+        <div class="book-car-content" data-aos="flip-right">
+          <h1 class="book-heading">BOOK A CAR</h1>
+          <p>Experience a smooth and stylish ride, making every journey comfortable and </p>
+          <div class="book-car-btn">
+            <a href="bookacar.html" class="cmn-btn">Book Now</a>
+            <div class="book-call">
+              <a class="call" href=""><i class="fa-solid fa-phone"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- our blog -->
+    <section class="our-blog">
+      <div class="container">
+        <div class="our-blog-details">
+          <div class="our-blog-heading">
+            Our Blog
+          </div>
+          <h4 class="sub-heading">Stay informed and inspired for your next journey</h4>
+        </div>
+
+        <div class="row our-blog-row">
+          <div class="col50">
+            <div class="left-container">
+              <!-- <figure> -->
+              <img class="car" src="images/leftcar.png" alt="car" />
+              <img class="car-layer" src="images/layer.png" alt="layer" />
+              <!-- </figure> -->
+              <div class="container-content">
+                <i class="fa-solid fa-calendar-days"></i><span>March 5, 2025</span>
+                <p>Top tips for booking your car rental:
+                  what you need to know
+                </p>
+                <span class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col50">
+            <div class="right-container">
+              <div class="right-row">
+                <figure>
+                  <img src="images/blogfirstrow.png" alt="explore" />
+                </figure>
+                <div class="right-row-content">
+                  <i class="fa-solid fa-calendar-days"></i><span>March 5, 2025</span>
+                  <p>Exploring your rental car options:
+                    sedan, suv, or convertible?
+                  </p>
+                  <span class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
+                </div>
+              </div>
+              <div class="right-row middle">
+                <figure>
+                  <img src="images/blogsecondrow.png" alt="explore" />
+                </figure>
+                <div class="right-row-content">
+                  <i class="fa-solid fa-calendar-days"></i><span>March 5, 2025</span>
+                  <p>Exploring your rental car options:
+                    sedan, suv, or convertible?
+                  </p>
+                  <span class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
+                </div>
+              </div>
+              <div class="right-row">
+                <figure>
+                  <img src="images/blogthirdrow.png" alt="explore" />
+                </figure>
+                <div class="right-row-content">
+                  <i class="fa-solid fa-calendar-days"></i><span>March 5, 2025</span>
+                  <p>Exploring your rental car options:
+                    sedan, suv, or convertible?
+                  </p>
+                  <span class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+
+  <!-- footer page -->
+  <footer>
+    <div class="container">
+      <div class="row footer-row">
+        <div class="col25">
+          <div class="footer-logo-icons">
+            <div class="brand-logo">
+              <a href="index.html">
+                <img src="images/footerLogo.png" alt="logo" />
+              </a>
+            </div>
+            <p>Experience the ease and convenience of renting a car with Rentive.</p>
+            <div class="social-media-icons">
+              <span>Follow Us</span>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Legal Policy</span>
+            <div class="lists">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Term & Condition</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Privacy Policy</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Legal Notice</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Accessibility</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Quick Links</span>
+            <div class="lists">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">About Us</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Vehicles</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Service</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Blog</a></li>
+                <li><i class="bi bi-chevron-right"></i><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Contact Us</span>
+            <div class="contactus">
+              <ul>
+                <li><i class="fa-solid fa-location-dot"></i><a href="#">6710, Kazipur, Sirajganj</a>
+                </li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="#">-880 123 556 7890</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="#">Info@domain.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- script js -->
+   <script src="script.js"></script>
+
+  <!-- jquery js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- waypoints jquery -->
+  <script src="lib/waypoints/waypoints.min.js"></script>
+
+  <!-- counterup js -->
+  <script src="lib/counterup/counterup.min.js"></script>
+
+  <script>
+    // testimonials js
+    var swiper = new Swiper(".mySwiper", {
+      centeredSlides: true,
+      slidesPerView: 3,
+      initialSlide: 2,
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+    });
+
+    $('[data-toggle="counter-up"]').counterUp({
+      delay: 10,
+      time: 2000,
+    });
+
+    // logo div copy
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+  </script>
+
+  <script>
+    // slider js
+    function collectionBtnSlider(direction) {
+      const collectionSlider = document.getElementById('collectionSlider');
+      const scrollAmount = 350;
+      collectionSlider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+
+    }
+
+
+    // swiper js
+    var swiper = new Swiper('.mySwiper', {
+      centeredSlides: true,
+      slidesPerView: 3,
+      initialSlide: 2,
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      }
+    })
+
+    // media query 767px 
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+    // Check if the media query is true
+    if (mediaQuery.matches) {
+      var swiper = new Swiper('.mySwiper', {
+        centeredSlides: true,
+        slidesPerView: 2,
+        initialSlide: 3,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        }
+      })
+    }
+
+    // media query 530px 
+    const nextMediaQuery = window.matchMedia('(max-width: 530px)')
+    // Check if the media query is true
+    if (nextMediaQuery.matches) {
+      var swiper = new Swiper('.mySwiper', {
+        centeredSlides: true,
+        slidesPerView: 1,
+        initialSlide: 3,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        }
+      })
+    }
+
+
+    // logo div copy
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+
+  </script>
+</body>
+
+</html>

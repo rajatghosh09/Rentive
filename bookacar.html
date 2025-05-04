@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- favicon link -->
+  <link rel="icon" href="images/favicon.png" />
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="bookacar.css" />
+
+  <title>Rentive</title>
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="header">
+    <div class="navcontainer">
+      <nav class="navbox">
+        <div class="brand">
+          <a href="index.html">
+            <img src="image/Logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="navlinks">
+          <li><a href="index.html" target="_self">Home</a></li>
+          <li><a href="aboutus.html" target="_self">About Us</a></li>
+          <li><a href="vehicles.html" target="_self">Vehicles</a></li>
+          <li><a href="ourservice.html" target="_self">Service</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div>
+          <a href="#" class="book-btn">
+            <i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main section -->
+
+  <main>
+    <!-- banner section -->
+
+    <section class="banner-img">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="banner-content">
+              <h1>Book a car</h1>
+              <p>
+                Experience a smooth and stylish ride,<br />
+                making every journey comfortable
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- book a car -->
+
+    <section class="book-car-section">
+      <div class="container">
+        <h2>Rent Your Best Cars here</h2>
+        <form class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Pick up Date</label>
+              <input type="date" />
+            </div>
+            <div class="form-group">
+              <label>Pick up Time</label>
+              <select>
+                <option>06:30 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Pick up Location</label>
+              <select>
+                <option>Kolkata</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Select Car</label>
+              <select>
+                <option>Sedan Family Car</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Return Date</label>
+              <input type="date" />
+            </div>
+            <div class="form-group">
+              <label>Return Time</label>
+              <select>
+                <option>06:30 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="text" placeholder="X-XXX-XXX-XXXX" />
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- footer section -->
+  <footer>
+    <div class="container">
+      <div class="row footer-row">
+        <div class="col25">
+          <div class="footer-logo-icons">
+            <div class="brand-logo">
+              <a href="index.html">
+                <img src="image/Logo.png" alt="logo" />
+              </a>
+            </div>
+            <p>
+              Experience the ease and convenience of renting a car with
+              Rentive.
+            </p>
+            <div class="social-media-icons">
+              <span>Follow Us</span>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Legal Policy</span>
+            <div class="lists">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Term & Condition</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Legal Notice</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Accessibility</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Quick Links</span>
+            <div class="lists">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Vehicles</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Blog</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Contact Us</span>
+            <div class="contactus">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i><a href="#">6710, Kazipur, Sirajganj</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone-volume"></i><a href="#">-880 123 556 7890</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i><a href="#">Info@domain.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- hamburger -->
+  <script src="script.js"></script>
+</body>
+
+</html>

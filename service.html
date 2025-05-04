@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- favicon link -->
+  <link rel="icon" href="images/favicon.png" />
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="service.css" />
+
+  <title>Rentive</title>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="navcolor">
+      <div class="navcontainer">
+        <nav class="navbox">
+          <div class="brand">
+            <a href="index.html">
+              <img src="image/Logo.png" alt="logo" />
+            </a>
+          </div>
+
+          <ul class="navlinks">
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="aboutus.html" target="_self">About Us</a></li>
+            <li><a href="vehicles.html" target="_self">Vehicles</a></li>
+            <li><a href="ourservice.html" target="_self">Service</a></li>
+            <li><a href="blog.html" target="_self">Blog</a></li>
+            <li><a href="contactus.html" target="_self">Contact Us</a></li>
+          </ul>
+
+          <div class="login">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
+
+          <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- service-section -->
+  <section class="service-section">
+    <div class="container">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col left-column">
+          <div class="info-box">
+            <h4>More Information</h4>
+            <div class="line"></div>
+            <ul>
+              <li><i class="fa-solid fa-phone-volume"></i> 234 567 8912</li>
+              <li><i class="fa-solid fa-envelope"></i> info@domain.com</li>
+              <li><i class="bi bi-clock"></i> 09:00am - 06:00pm</li>
+            </ul>
+          </div>
+          <div class="service-list">
+            <h4>Our Services</h4>
+            <div class="line"></div>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> One-Way Rentals</li>
+              <li><i class="bi bi-chevron-right"></i> Airport Transfers</li>
+              <li><i class="bi bi-chevron-right"></i> Corporate Rentals</li>
+              <li><i class="bi bi-chevron-right"></i> Chauffeur Service</li>
+              <li><i class="bi bi-chevron-right"></i> Chauffeur Service</li>
+              <li><i class="bi bi-chevron-right"></i> Rent with Driver</li>
+              <li><i class="bi bi-chevron-right"></i> Mountain Travel</li>
+              <li><i class="bi bi-chevron-right"></i> Long-Term Leases</li>
+              <li><i class="bi bi-chevron-right"></i> Loyalty Programs</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col right-column">
+          <h2>Mountain Travel Service Details</h2>
+          <img src="image/blog-6-768x449 1.png" alt="Main Travel" class="main-img" />
+          <p class="description">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+            during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in
+            section 1.10.32.
+          </p>
+          <div class="sub-images">
+            <img src="image/blog-5-768x449 1.png" alt="Service 1" class="photo1" />
+            <img src="image/intro-video-bg 3.png" alt="Service 2" class="photo2" />
+          </div>
+          <div class="faq-section">
+            <h2>Most Popular Questions</h2>
+
+            <div class="accordion-item active">
+              <button class="accordion-header">
+                <span>How Much Do Your Services Cost?</span>
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>Who Can Use Your Services?</span>
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Our services are available to individuals and businesses
+                  alike, tailored to meet diverse travel needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>How Do I Get Started?</span>
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Simply contact us via phone or email, and our team will
+                  assist you with the booking process.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>What Is Your Process?</span>
+                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  We follow a seamless process of inquiry, confirmation, and
+                  on-time service delivery.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- book a car -->
+  <section class="book-car">
+    <div class="book-background">
+      <figure>
+        <!-- <img class="background-car" src="" alt="car" /> -->
+        <img src="image/360_F_519315708_ZdpUCELz213xADoYFXujGGF3DiF9rQQs 1.png" alt="">
+      </figure>
+    </div>
+
+    <div class="container">
+      <div class="book-car-content" data-aos="flip-right">
+        <h1 class="book-heading">BOOK A CAR</h1>
+        <p>Experience a smooth and stylish ride, making every journey comfortable and </p>
+        <div class="book-car-btn">
+          <a href="#" class="cmn-btn">Book Now</a>
+          <div class="book-call">
+            <a class="call" href=""><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <!-- footer section -->
+  <footer>
+    <div class="container">
+      <div class="row footer-row">
+        <div class="col25">
+          <div class="footer-logo-icons">
+            <div class="brand-logo">
+              <a href="index.html">
+                <img src="image/Logo.png" alt="logo" />
+              </a>
+            </div>
+            <p>
+              Experience the ease and convenience of renting a car with
+              Rentive.
+            </p>
+            <div class="social-media-icons">
+              <span>Follow Us</span>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Legal Policy</span>
+            <div class="lists">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Term & Condition</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Legal Notice</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Accessibility</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Quick Links</span>
+            <div class="lists">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Vehicles</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Blog</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i><a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col25">
+          <div class="links">
+            <span>Contact Us</span>
+            <div class="contactus">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i><a href="#">6710, Kazipur, Sirajganj</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone-volume"></i><a href="#">-880 123 556 7890</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i><a href="#">Info@domain.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+
+  <script>
+    const accordions = document.querySelectorAll('.accordion-item');
+
+    accordions.forEach((item) => {
+      const header = item.querySelector('.accordion-header');
+
+      header.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+
+        accordions.forEach((i) => {
+          i.classList.remove('active');
+          i.querySelector('.icon').textContent = '+';
+          i.querySelector('.accordion-content').style.display = 'none';
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          item.querySelector('.icon').textContent = '−';
+          item.querySelector('.accordion-content').style.display = 'block';
+        }
+      });
+    });
+
+  </script>
+
+
+</body>
+
+</html>
