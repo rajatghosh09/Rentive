@@ -145,10 +145,6 @@ img {
   display: flex;
 }
 
-.navlinks .active {
-  color: var(--primary-gold);
-}
-
 header {
   position: absolute;
   z-index: 2;
@@ -208,6 +204,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navlinks .active {
+  color: var(--primary-gold);
 }
 
 .banner-img {
@@ -283,6 +283,20 @@ header {
 
 .log-btn i:hover {
   color: var(--primary-white);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: azure;
+  transition: transform 0.3s ease;
 }
 
 .contact-info {
@@ -518,10 +532,6 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-.book-car-btn .cmn-btn{
-  text-transform: none;
-}
-
 
 
 
@@ -610,55 +620,126 @@ footer {
 
 
 
-
-
-/* media Queries Start */
-@media (max-width:1399px) {
-
-  /* car */
-  .car-img img {
-    left: 20px;
+/* Media Queries */
+@media (max-width: 1199px) {
+  .banner-content h1 {
+    font-size: 56px;
   }
 
-  /* become a host */
-  .host-car {
-    right: -130px;
-  }
-
-  .girl-photo4 {
-    left: 40%;
-  }
-
-  .girl-photo2 {
-    top: 10%;
-    left: 42px;
-  }
-
-  .host-woman {
-    left: 200px;
+  .banner-content p {
+    font-size: 28px;
   }
 }
 
+@media (max-width: 1024px) {
+  .form-container {
+    padding: 20px;
+  }
+}
 
-@media (max-width:1199px) {
-
-  /* become a host */
-  .girl-photo2 {
-    top: 3%;
+@media (max-width: 991px) {
+  .navbox .navlinks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-gold);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform 0.3s ease;
   }
 
-  .girl-photo {
+  .navbox .navlinks.active {
+    transform: translate(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbox .navlinks li {
+    margin: 20px 0;
+  }
+
+  .navbox .navlinks a {
+    font-size: 22px;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(50deg) translateY(7px);
+    background: rgb(229, 229, 5);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-50deg) translateY(-7px);
+    background: rgb(254, 253, 253);
+  }
+
+  .log-btn {
     display: none;
   }
 
-  .host-car {
-    right: -30px;
+  .banner-content {
+    text-align: center;
+    display: ruby;
   }
 
-  .host-woman {
-    left: 110px;
+  .name-email {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .banner-content h1 {
+    font-size: 42px;
+  }
+
+  .banner-content p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .form-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-submit button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-content h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner-content h1 {
+    font-size: 35px;
+  }
+
+  .banner-content p {
+    font-size: 18px;
+  }
+}
+
+
+
 
 @media (max-width:1024px) {
 
@@ -957,57 +1038,61 @@ footer {
 
 
 @media (max-width:767px) {
-  .navlinks {
+  .navbox .navlinks {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    /* text-align: center; */
-    justify-content: center;
-    align-items: center;
+    /* top: 18%; */
+    top: 91px;
+    right: 0;
     width: 100%;
+    height: 100vh;
+    /* height: calc(100vh - 18%); */
     background: url("images/bannerimg.png") no-repeat;
     background-size: cover;
     background-position: center;
-    right: -100%;
-    top: 20%;
-    height: calc(100vh - 20%);
-    transition: 0.8s ease-in-out;
-    padding: 15px 0;
-    /* z-index: 99; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform 0.8s ease-in-out;
   }
 
-  .navlinks li a {
-    display: inline-block;
-    /* text-align: center; */
-    margin: 10px 0;
-    font-size: 18px;
+
+  .navbox .navlinks.active {
+    transform: translate(0);
   }
 
-  /* .navlinks li a:hover{
-
-  } */
-
-  .menu-btn {
-    position: absolute;
-    right: 15px;
-
+  .hamburger {
+    display: flex;
   }
 
-  .navbox {
-    justify-content: space-between;
-    margin: 0 auto;
+  .navbox .navlinks li {
+    margin: 20px 0;
   }
 
-  .menu-btn i {
-    display: block;
-    /* position: relative; */
-    font-size: 28px;
+  .navbox .navlinks a {
+    font-size: 22px;
   }
 
-  #click:checked~.menu-btn i::before {
-    content: "\f00d";
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(50deg) translateY(10px);
+    background: var(--primary-gold2);
   }
 
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-50deg) translateY(-11px);
+    background: var(--primary-gold2);
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 
 
   /* about us */
@@ -1076,9 +1161,9 @@ footer {
   }
 
   .book-call .call {
-    padding: 3px 18px;
+    padding: 3px 14px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 10px;
   }
 
   /* our blog & aboutus*/
@@ -1249,6 +1334,11 @@ footer {
     width: 80vw;
   }
 
+  .contact-main {
+    /* max-width: 470px; */
+    align-items: center;
+  }
+
   /* car */
   .car-img img {
     left: 5px;
@@ -1329,7 +1419,12 @@ footer {
 
 @media (max-width:375px) {
 
-  /* logo */
+  .contact-main {
+    /* max-width: 350px; */
+    align-items: center;
+  }
+
+
   .logo-container {
     max-width: 330px;
   }
@@ -1354,7 +1449,7 @@ footer {
   }
 
   .book-car-btn .cmn-btn {
-    padding: 11px 22px
+    padding: 8px 15px;
   }
 
   /* our blog */
@@ -1389,5 +1484,9 @@ footer {
 
   .host-woman {
     width: 200px;
+  }
+
+  .contact-main .description {
+    max-width: 268px;
   }
 }

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 :root {
   --primary-white: #ffffff;
   --primary-gold: #cca848;
@@ -24,8 +23,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-  font-family:"Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -33,6 +32,7 @@ body{
 a {
   text-decoration: none;
 }
+
 ul li {
   list-style: none;
 }
@@ -41,6 +41,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .navcontainer {
   max-width: 1170px;
   margin: 0 auto;
@@ -52,80 +53,93 @@ img {
   cursor: pointer;
   font-size: 25px;
 }
+
 #click,
 .navbox .menu-btn i {
   display: none;
 }
-#click:checked ~ .navbar {
+
+#click:checked~.navbar {
   left: 0;
 }
-.navlinks .active {
-  color: var(--primary-gold);
-}
+
 .containerfluid {
   max-width: 1600px;
   margin: 0 auto;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
+
 .col100 {
   max-width: 100%;
   flex: 0 0 100%;
   padding: 0 15px;
 }
+
 .col80 {
   max-width: 80%;
   flex: 0 0 80%;
   padding: 0 15px;
 }
+
 .col60 {
   max-width: 60%;
   flex: 0 0 60%;
   padding: 0 15px;
 }
+
 .col50 {
   max-width: 50%;
   flex: 0 0 50%;
   padding: 0 15px;
 }
+
 .col45 {
   max-width: 45%;
   flex: 0 0 45%;
   padding: 0 15px;
 }
+
 .col40 {
   max-width: 40%;
   flex: 0 0 40%;
   padding: 0 15px;
 }
+
 .col35 {
   max-width: 35%;
   flex: 0 0 35%;
   padding: 0 15px;
 }
+
 .col33 {
   max-width: 33.33%;
   flex: 0 0 33.33%;
   padding: 0 15px;
 }
+
 .col30 {
   max-width: 30%;
   flex: 0 0 30%;
   padding: 0 15px;
 }
+
 .col25 {
   max-width: 25%;
   flex: 0 0 25%;
   padding: 0 15px;
 }
+
 .col20 {
   max-width: 20%;
   flex: 0 0 20%;
   padding: 0 15px;
 }
+
 .navbar {
   display: flex;
 }
@@ -142,19 +156,23 @@ header {
   background-color: rgba(22, 28, 29, 0.53);
   border: 1px solid var(--text-color);
 }
+
 .navbox {
   justify-content: space-between;
   align-items: center;
   transition: 0.5s all;
   margin-top: -14px;
 }
+
 .navbar {
   position: relative;
   align-items: center;
 }
+
 .navbar li {
   padding: 0 16px;
 }
+
 .navbar li a {
   position: relative;
   color: #fff;
@@ -186,6 +204,21 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-white);
+  transition: transform 0.3s ease;
+}
+
 .banner-img {
   position: relative;
   width: 100%;
@@ -196,6 +229,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .banner-img::before {
   content: "";
   position: absolute;
@@ -224,9 +258,11 @@ header {
   padding: 0 15px;
   width: 1600px;
 }
+
 .banner-content {
   position: absolute;
 }
+
 .banner-content h1 {
   margin-top: -30px;
   color: var(--primary-white);
@@ -242,17 +278,35 @@ header {
   color: var(--primary-white);
   font-family: "Lora", serif;
 }
+
 .log-btn {
   display: inline-block;
 }
+
 .log-btn i {
   font-size: 32px;
   border-radius: 50%;
   color: var(--primary-gold);
 }
+
 .log-btn i:hover {
   color: var(--primary-white);
 }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: azure;
+  transition: transform 0.3s ease;
+}
+
 .car-rental-section {
   display: flex;
   justify-content: center;
@@ -281,13 +335,12 @@ header {
 }
 
 .card-date {
-  color: #A7893B;
+  color: #a7893b;
   font-size: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-
 
 .card-title {
   font-size: 28px;
@@ -295,26 +348,26 @@ header {
   color: #333;
 }
 
-.card-title{
+.card-title {
   font-family: lora, sans-serif;
   font-weight: 400;
 }
 
-.card-description{
-  font-family:"Poppins", sans-serif;
+.card-description {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: rgba(104, 104, 104, 0.65);
   margin-bottom: 24px;
 }
 
-.fa-regular{
+.fa-regular {
   padding-right: 12px;
 }
 
 .read-more-button {
   display: inline-block;
-  background-color: #C09C3D;
+  background-color: #c09c3d;
   color: white;
   padding: 20px 35px;
   font-family: "poppins", sans-serif;
@@ -411,6 +464,9 @@ header {
   transition: 0.3s ease-in-out;
 }
 
+.navlinks .active {
+  color: var(--primary-gold);
+}
 
 /* footer */
 footer {
@@ -495,110 +551,97 @@ footer {
   margin-top: 18px;
 }
 
+/* Media Queries */
+@media (max-width: 1199px) {
+  .banner-content h1 {
+    font-size: 56px;
+  }
 
-/* media Queries Start */
+  .banner-content p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-content h1 {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .banner-content p {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 991px) {
   .navbox .navlinks {
     position: fixed;
-    top: 0;
+    /* top: 18%; */
+    top: 91px;
     right: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--primary-gold);
+    /* height: calc(100vh - 18%); */
+    background: url("images/bannerimg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: translate(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease-in-out;
   }
+
   .navbox .navlinks.active {
     transform: translate(0);
   }
+
   .hamburger {
     display: flex;
   }
+
   .navbox .navlinks li {
     margin: 20px 0;
   }
+
   .navbox .navlinks a {
     font-size: 22px;
   }
+
   .hamburger.active .bar:nth-child(1) {
-    transform: rotate(50deg) translateY(7px);
-    background: rgb(229, 229, 5);
+    transform: rotate(50deg) translateY(10px);
+    background: var(--primary-gold2);
   }
+
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-50deg) translateY(-7px);
-    background: rgb(254, 253, 253);
+    transform: rotate(-50deg) translateY(-11px);
+    background: var(--primary-gold2);
   }
-  .service-btn {
+
+
+  .log-btn {
     display: none;
   }
+
   .banner-content {
     text-align: center;
     display: ruby;
   }
 
-  .work-row .howitwork-all {
-    display: block;
-    margin: 0 auto;
-  }
-  /* how it work */
-  .down-line {
-    left: 4px;
-    top: 139px;
+  .banner-content h1 {
+    font-size: 65px;
+    text-align: center;
   }
 
-  .down-ellipse {
-    top: 236px;
+  .banner-content p {
+    font-size: 30px;
   }
 
-  .work-row .col25 {
-    display: none;
-  }
-
-  .howitwork-all {
-    margin: 0 auto;
-  }
-
-  /* testimonials */
-  .testimonials {
-    padding: 75px 0 50px;
-  }
-
-  /* .testimonials-row {
-    /* max-width: 890px; */
-  /* margin: 0 auto; */
-  /* } */
-
-  .swiper {
-    min-height: 420px;
-  }
-
-  .testimonials-content-details {
-    padding: 15px;
-  }
-
-  .content-rating {
-    padding: 15px 0 15px;
-  }
-
-  /* .testimonials-row .col33{
-    max-width: 50%;
-    flex: 0 0 50%;
-} */
-
-  /* book a car */
-  .book-car-content {
-    top: 60px;
-  }
-
-  .book-car-content p {
-    max-width: 360px;
-  }
   /* footer section */
   .footer-row {
     text-align: center;
@@ -624,108 +667,54 @@ footer {
   }
 }
 
-@media (max-width: 1399px) {
-  .banner-content h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 1199px) {
-  .banner-content h1 {
-    font-size: 45px;
-  }
-  .banner-content p {
-    font-size: 32px;
-  }
-}
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .banner-content h1 {
     font-size: 38px;
   }
+
   .banner-content p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  .form-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-submit button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-content h1 {
     font-size: 28px;
   }
 }
-@media (max-width: 991px) {
+
+@media (max-width: 320px) {
   .banner-content h1 {
-    font-size: 100px;
-    text-align: center;
+    font-size: 35px;
   }
-  .banner-content p {
-    font-size: 50px;
-  }
-}
-@media (max-width: 768px) {
-  .banner-content h1 {
-    font-size: 100px;
-  }
-  .banner-content p {
-    font-size: 40px;
-  }
-  .work-details{
-    text-align: center;
-  }
-}
-@media (max-width: 575px) {
-  .banner-content h1 {
-    font-size: 70px;
-    padding-right: 120px;
-  }
-  .banner-content p {
-    font-size: 30px;
-    padding-right: 120px;
-  }
-}
-@media (max-width: 480px) {
-  .banner-content h1 {
-    font-size: 50px;
-    padding-right: 220px;
-  }
-  .banner-content p {
-    font-size: 20px;
-    padding-right: 220px;
-  }
-}
-@media (max-width: 375px) {
-  .banner-content h1 {
-    font-size: 50px;
-    padding-right: 250px;
-  }
+
   .banner-content p {
     font-size: 18px;
-    padding-right: 220px;
   }
+}
+
+/* book a car */
+.book-car-content {
+  top: 60px;
+}
+
+.book-car-content p {
+  max-width: 360px;
 }
 
 @media (max-width: 1024px) {
-  /* how it work */
-  .work-row {
-    margin: 0 auto;
-  }
-
-  .up-line {
-    position: relative;
-    left: 8px;
-  }
-
-  .down-line {
-    left: 4px;
-    top: 147px;
-  }
-
-  .group-three,
-  .group-four {
-    left: -12px;
-  }
-
-  .down-ellipse {
-    top: 245px;
-    left: 85px;
-  }
-
-  .group-four .work-dot {
-    right: -13px;
-    top: 118px;
-  }
 
   /* book a car */
   .book-car-content {
@@ -733,33 +722,7 @@ footer {
   }
 }
 
-@media (max-width: 991px) {
-  .col25 {
-    flex: 1 1 calc(33.333% - 1rem);
-    max-width: calc(33.333% - 1rem);
-  }
-  .services-section {
-    height: 1500px;
-    display: block;
-  }
-}
-
 @media (max-width: 768px) {
-  .col25 {
-    flex: 1 1 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
-  }
-  .services-section {
-    height: 3000px;
-    display: block;
-  }
-  .service-card {
-    margin-left: 50px;
-  }
-  .testimonials-row .col33 {
-    max-width: 50%;
-    flex: 0 0 50%;
-  }
 
   /* book car */
   .book-car-content {
@@ -783,18 +746,6 @@ footer {
 }
 
 @media (max-width: 575px) {
-  .col25 {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-  .testimonials-row .col33 {
-    max-width: 70%;
-    flex: 0 0 70%;
-  }
-  .services-section {
-    height: 3000px;
-    display: block;
-  }
 
   /* book car */
   .book-car-content {
@@ -814,16 +765,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .col25 {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  /* testimonials */
-  .testimonials-row .col33 {
-    max-width: 100%;
-    flex: 0 0 100%;
-  }
 
   /* book car */
   .book-heading {
@@ -852,6 +793,12 @@ footer {
     font-size: 20px;
   }
 
+  .book-call .call {
+    padding: 3px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
   .book-car-content p {
     margin: 5px 0;
   }
@@ -861,7 +808,7 @@ footer {
   }
 
   .book-car-btn .cmn-btn {
-    padding: 11px 22px;
+    padding: 8px 18px;
   }
 }
 
@@ -869,38 +816,6 @@ footer {
   .col25 {
     flex: 1 1 100%;
     max-width: 100%;
-  }
-}
-@media (max-width: 991px) {
-  .auto-service-row {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .col50 {
-    max-width: 100%;
-    flex: 0 0 100%;
-    text-align: center;
-    padding: 15px;
-  }
-
-  .auto-service-left p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .auto-service-right img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    max-width: 450px;
-  }
-
-  .auto-service-left h2 {
-    font-size: 28px;
-  }
-  .service-item {
-    justify-content: center;
   }
 }
 
@@ -950,6 +865,14 @@ footer {
     font-size: 22px;
   }
 
+  .banner-content h1 {
+    font-size: 50px;
+  }
+
+  .banner-content p {
+    font-size: 20px;
+  }
+
   .auto-service-left p {
     font-size: 14px;
   }
@@ -963,6 +886,28 @@ footer {
 @media (max-width: 375px) {
   .auto-service-left h2 {
     font-size: 20px;
+  }
+
+  .card-date,
+  i {
+    font-size: 14px;
+  }
+
+  .card-title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .card-description {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .read-more-button {
+    padding: 15px 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .service-item h4 {
