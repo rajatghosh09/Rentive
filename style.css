@@ -1078,7 +1078,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--btn-color);
 }
 
-.book-car-btn .cmn-btn{
+.book-car-btn .cmn-btn {
     text-transform: none;
 }
 
@@ -1824,8 +1824,8 @@ footer {
         background: var(--primary-gold2);
     }
 
-    .login i{
-       display: none;
+    .login i {
+        display: none;
     }
 
 
@@ -1968,6 +1968,11 @@ footer {
         min-height: 700px;
     }
 
+    .collection-items {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
     .collection-items-content {
         padding: 12px 15px;
     }
@@ -2014,8 +2019,8 @@ footer {
 
     /* testimonial */
     .testimonials-row .col33 {
-        max-width: 70%;
-        flex: 0 0 70%;
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 
     /* book car */
@@ -2184,21 +2189,22 @@ footer {
     }
 
     /* our blog */
-    .container-content p{
+    .container-content p {
         font-size: 17px;
     }
 
     /* download app */
-    .play-store{
+    .play-store {
         padding: 10px 8px 8px 12px;
     }
 
     .apple-store {
         padding-right: 23px;
     }
-    
+
     /* choose us */
-    .left-boxes p, .right-boxes p {
+    .left-boxes p,
+    .right-boxes p {
         font-size: 10px;
     }
 
@@ -2209,7 +2215,7 @@ footer {
         padding: 15px 20px;
     }
 
-    .service-details span{
+    .service-details span {
         font-size: 20px;
     }
 }
@@ -2225,6 +2231,16 @@ footer {
     .we-offer-row .col25 {
         max-width: 100%;
         flex: 0 0 100%;
+    }
+
+    .col-change-row .col25 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .col-change-row .left-boxes,
+    .right-boxes {
+        text-align: center;
     }
 
     /* book car */

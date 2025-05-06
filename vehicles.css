@@ -94,9 +94,9 @@ header {
     color: var(--primary-black);
 }
 
-.car-select .row {
+/* .car-select .row {
     flex-wrap: nowrap;
-}
+} */
 
 .sidebar {
     display: flex;
@@ -434,23 +434,56 @@ input[type=range]::after {
 }
 
 @media (max-width:575px) {
-    .car-select-row .col33{
+    /* left section */
+    .left-section img{
+        width: 100%;
+    }
+
+    .section-heading span {
+        font-size: 18px;
+    }
+
+    /* find car right section */
+    .car-select {
+        min-height: 1850px;
+    }
+
+    .find-car-collection .col33{
         max-width: 100%;
         flex: 0 0 100%;
     }
 
     .car-select-row .col25{
-        max-width: 40%;
-        flex: 0 0 40%;
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 
     .car-select-row .col75{
-        max-width: 60%;
-        flex: 0 0 60%;
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 
-    .filters{
-        flex-direction: column;
+    .find-car-collection{
+        height: 783px;
+        overflow-y: scroll;
+    }
+
+    .collection-items-content .heading {
+        font-size: 20px;
+    }
+
+    .collection-items-content .rating{
+        font-size: 15px;
+    }
+
+    .collection-items-content {
+        padding: 20px 70px;
+        margin: 0 auto;
+    }
+
+    .collection-items-content .details{
+        text-align: center;
+        display: block;
     }
 }
 

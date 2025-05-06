@@ -522,7 +522,7 @@ header {
   padding: 20px 60px;
   background-color: var(--primary-gold);
   color: var(--primary-white);
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-radius: 18px;
 }
 
@@ -1448,5 +1448,24 @@ footer {
 
   .contact-main .description {
     max-width: 268px;
+  }
+
+  .book-car-content {
+    top: 9px;
+  }
+
+  .book-car-btn .cmn-btn {
+    padding: 11px 22px
+  }
+}
+
+@media (max-width: 320px) {
+  .book-car-btn .cmn-btn {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+
+  .book-car-content {
+    top: 4px;
   }
 }

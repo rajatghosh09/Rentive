@@ -771,7 +771,7 @@ header {
   border-radius: 18px;
 }
 
-.book-car-btn .cmn-btn{
+.book-car-btn .cmn-btn {
   text-transform: none;
 }
 
@@ -1062,6 +1062,10 @@ footer .row {
   .work-details {
     text-align: center;
   }
+
+  .book-car-btn .cmn-btn {
+    padding: 10px 28px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1095,11 +1099,17 @@ footer .row {
     text-align: center;
   }
 
+  .book-car-btn .cmn-btn {
+    padding: 8px 18px;
+  }
+
   /* footer */
   .footer-logo-icons p {
     max-width: 300px;
     margin: 8px auto;
   }
+
+
 }
 
 @media (max-width: 375px) {
@@ -1236,6 +1246,10 @@ footer .row {
     justify-content: center;
     align-items: center;
   }
+
+  .book-car-btn .cmn-btn {
+    padding: 7px 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1292,7 +1306,7 @@ footer .row {
   }
 
   .book-car-content {
-    top: 9px;
+    top: 6px;
   }
 
   .book-car-btn .cmn-btn {
@@ -1410,6 +1424,11 @@ footer .row {
   .service-item p {
     font-size: 12px;
   }
+
+  .book-call .call {
+    padding: 3px 9px;
+    font-size: 9px;
+  }
 }
 
 /* Max Width 320px */
@@ -1425,5 +1444,14 @@ footer .row {
   .service-item img {
     width: 30px;
     height: 30px;
+  }
+  
+  .book-heading {
+    font-size: 15px;
+  }
+
+  .book-car-btn .cmn-btn {
+    padding: 5px 12px;
+    font-size: 12px;
   }
 }

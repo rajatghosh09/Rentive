@@ -279,9 +279,9 @@
                                 </figure>
 
                                 <span class="details">Rolls Royce Phantom SWB is a luxurious and opulent </span>
-                                <span class="dollar"><i class="bi bi-currency-dollar"></i> 
+                                <span class="dollar"><i class="bi bi-currency-dollar"></i>
                                     <span class="large">20</span>/ per hour
-                                </span>    
+                                </span>
 
                                 <div class="more-details">
                                     <a href="vehiclesdetails.html">MORE DETAILS</a>
@@ -915,7 +915,8 @@
                                 <p>Top tips for booking your car rental:
                                     what you need to know
                                 </p>
-                                <a href="blog.html" class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
+                                <a href="blog.html" class="right-icon"><i
+                                        class="bi bi-arrow-up-right-circle-fill"></i></a>
                             </div>
                         </div>
                     </div>
@@ -930,7 +931,8 @@
                                     <p>Exploring your rental car options:
                                         sedan, suv, or convertible?
                                     </p>
-                                    <a href="blog.html" class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
+                                    <a href="blog.html" class="right-icon"><i
+                                            class="bi bi-arrow-up-right-circle-fill"></i></a>
                                 </div>
                             </div>
                             <div class="right-row middle">
@@ -942,7 +944,8 @@
                                     <p>Exploring your rental car options:
                                         sedan, suv, or convertible?
                                     </p>
-                                    <a href="blog.html" class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
+                                    <a href="blog.html" class="right-icon"><i
+                                            class="bi bi-arrow-up-right-circle-fill"></i></a>
                                 </div>
                             </div>
                             <div class="right-row">
@@ -954,7 +957,8 @@
                                     <p>Exploring your rental car options:
                                         sedan, suv, or convertible?
                                     </p>
-                                    <a href="blog.html" class="right-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
+                                    <a href="blog.html" class="right-icon"><i
+                                            class="bi bi-arrow-up-right-circle-fill"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1072,10 +1076,14 @@
                         <p>Experience the ease and convenience of renting a car with Rentive.</p>
                         <div class="social-media-icons">
                             <span>Follow Us</span>
-                            <a href="https://www.facebook.com/share/1BS6x2Trcx/?mibextid=qi2Omg"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://x.com/WebSkitters_Edu?t=bs8KnU0BxNRR1Kp4qZg6LQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="https://www.linkedin.com/company/webskitters/"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/webskittersacademy?igsh=MTRjdWFla3k5eGRkaA=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/share/1BS6x2Trcx/?mibextid=qi2Omg"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://x.com/WebSkitters_Edu?t=bs8KnU0BxNRR1Kp4qZg6LQ&s=09"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/webskitters/"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/webskittersacademy?igsh=MTRjdWFla3k5eGRkaA=="><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1151,7 +1159,7 @@
 
 
         // swiper js
-        var swiper = new Swiper('.mySwiper', {
+        let swiper = new Swiper('.mySwiper', {
             centeredSlides: true,
             slidesPerView: 3,
             initialSlide: 2,
@@ -1163,39 +1171,39 @@
             }
         })
 
+
         // media query 767px 
-        const mediaQuery = window.matchMedia('(max-width: 767px)')
-        // Check if the media query is true
-        if (mediaQuery.matches) {
-            var swiper = new Swiper('.mySwiper', {
-                centeredSlides: true,
-                slidesPerView: 2,
-                initialSlide: 3,
+        document.addEventListener("DOMContentLoaded", function () {
+            let swiper;
 
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    dynamicBullets: true,
+            function initSwiper() {
+
+                const isMobile = window.matchMedia("(max-width: 767px)").matches;
+                if (isMobile && !swiper) {
+                    swiper = new Swiper('.mySwiper', {
+                        slidesPerView: 1,
+                        initialSlide: 2,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                            dynamicBullets: true,
+                        }
+                    });
+                } 
+                else if (!isMobile && swiper) {
+                    swiper.destroy();
+                    swiper = undefined;
                 }
-            })
-        }
+            }
 
-        // media query 530px 
-        const nextMediaQuery = window.matchMedia('(max-width: 530px)')
-        // Check if the media query is true
-        if (nextMediaQuery.matches) {
-            var swiper = new Swiper('.mySwiper', {
-                centeredSlides: true,
-                slidesPerView: 1,
-                initialSlide: 3,
+            // Initialize on load
+            initSwiper();
 
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    dynamicBullets: true,
-                }
-            })
-        }
+            // Re-check on window resize
+            window.addEventListener('resize', function () {
+                initSwiper();
+            });
+        });
 
 
         // logo div copy

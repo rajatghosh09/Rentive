@@ -715,6 +715,40 @@
       },
     });
 
+    // media query 767px 
+    document.addEventListener("DOMContentLoaded", function () {
+      let swiper;
+
+      function initSwiper() {
+
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+        if (isMobile && !swiper) {
+          swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            initialSlide: 2,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              dynamicBullets: true,
+            }
+          });
+        }
+        else if (!isMobile && swiper) {
+          swiper.destroy();
+          swiper = undefined;
+        }
+      }
+
+      // Initialize on load
+      initSwiper();
+
+      // Re-check on window resize
+      window.addEventListener('resize', function () {
+        initSwiper();
+      });
+    });
+
+
     $('[data-toggle="counter-up"]').counterUp({
       delay: 10,
       time: 2000,

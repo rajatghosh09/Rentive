@@ -771,9 +771,8 @@
 
     }
 
-
     // swiper js
-    var swiper = new Swiper('.mySwiper', {
+    let swiper = new Swiper('.mySwiper', {
       centeredSlides: true,
       slidesPerView: 3,
       initialSlide: 2,
@@ -785,39 +784,39 @@
       }
     })
 
+
     // media query 767px 
-    const mediaQuery = window.matchMedia('(max-width: 767px)')
-    // Check if the media query is true
-    if (mediaQuery.matches) {
-      var swiper = new Swiper('.mySwiper', {
-        centeredSlides: true,
-        slidesPerView: 2,
-        initialSlide: 3,
+    document.addEventListener("DOMContentLoaded", function () {
+      let swiper;
 
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
+      function initSwiper() {
+
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+        if (isMobile && !swiper) {
+          swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            initialSlide: 2,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              dynamicBullets: true,
+            }
+          });
         }
-      })
-    }
-
-    // media query 530px 
-    const nextMediaQuery = window.matchMedia('(max-width: 530px)')
-    // Check if the media query is true
-    if (nextMediaQuery.matches) {
-      var swiper = new Swiper('.mySwiper', {
-        centeredSlides: true,
-        slidesPerView: 1,
-        initialSlide: 3,
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
+        else if (!isMobile && swiper) {
+          swiper.destroy();
+          swiper = undefined;
         }
-      })
-    }
+      }
+
+      // Initialize on load
+      initSwiper();
+
+      // Re-check on window resize
+      window.addEventListener('resize', function () {
+        initSwiper();
+      });
+    });
 
 
     // logo div copy
