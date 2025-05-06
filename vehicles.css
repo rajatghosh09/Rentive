@@ -478,7 +478,7 @@ input[type=range]::after {
 
     .collection-items-content {
         padding: 20px 70px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .collection-items-content .details{
@@ -501,6 +501,14 @@ input[type=range]::after {
     .filters #show{
         width: 100%;
     }
+
+    .collection-items-content {
+        padding: 20px 30px;
+    }
+
+    .filters{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:375px) {
@@ -514,5 +522,38 @@ input[type=range]::after {
 
     .car-search-details p {
         width: 295px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .find-car{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* right car section */
+    .collection-items-content {
+        padding: 20px 15px;
+    }
+
+    .logo-container {
+        max-width: 300px;
+    }
+
+    /* book a car */
+    .book-car-content {
+        top: 5px;
+    }
+
+    .book-car-btn .cmn-btn {
+        padding: 6px 19px;
+        font-size: 12px;
+    }
+
+    .book-call .call {
+        padding: 1px 12px;
+        font-size: 12px;
     }
 }

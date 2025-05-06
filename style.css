@@ -2294,3 +2294,20 @@ footer {
         width: 200px;
     }
 }
+
+@media (max-width:320px) {
+    /* book a car */
+    .book-car-content {
+        top: 5px;
+    }
+
+    .book-car-btn .cmn-btn {
+        padding: 6px 19px;
+        font-size: 12px;
+    }
+
+    .book-call .call {
+        padding: 1px 12px;
+        font-size: 12px;
+    }
+}
