@@ -1075,6 +1075,14 @@ footer .row {
 
 /* responsive start */
 
+@media (ma) {}
+
+@media (max-width:1125px) {
+  .content-heading {
+    width: 211px;
+  }
+}
+
 @media (max-width: 991px) {
   .navbox .navlinks {
     position: fixed;
@@ -1129,6 +1137,10 @@ footer .row {
 
   .banner-content {
     text-align: center;
+  }
+
+  .banner-img .col {
+    width: 740px;
   }
 
   .col50 {
@@ -1194,11 +1206,6 @@ footer .row {
     padding: 75px 0 50px;
   }
 
-  /* .testimonials-row {
-  /* max-width: 890px; */
-  /* margin: 0 auto; */
-  /* } */
-
   .swiper {
     min-height: 420px;
   }
@@ -1211,10 +1218,11 @@ footer .row {
     padding: 15px 0 15px;
   }
 
-  /* .testimonials-row .col33{
-  max-width: 50%;
-  flex: 0 0 50%;
-} */
+  .content-heading {
+    width: 100%;
+  }
+
+
   /* book a car */
   .book-car-content {
     top: 60px;
@@ -1290,6 +1298,7 @@ footer .row {
   }
 
   .sub-heading {
+    margin: 12px auto;
     display: flex;
     justify-content: center;
     /* padding-left: 240px; */
@@ -1365,6 +1374,14 @@ footer .row {
   .our-mission {
     margin-top: 50px;
   }
+
+  .our-blog-row .col50 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1399px) {
@@ -1404,7 +1421,7 @@ footer .row {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .banner-content h1 {
     font-size: 100px;
   }
@@ -1497,6 +1514,13 @@ footer .row {
 
 }
 
+@media (max-width: 600px) {
+  .testimonials-row .col33 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
 @media (max-width: 575px) {
   .banner-content h1 {
     font-size: 70px;
@@ -1544,11 +1568,6 @@ footer .row {
     margin: 15px 0;
   }
 
-  /* testimonial */
-  .testimonials-row .col33 {
-    max-width: 70%;
-    flex: 0 0 70%;
-  }
 
   /* book car */
   .book-car-content {
@@ -1656,6 +1675,11 @@ footer .row {
     /* text-align: center; */
   }
 
+  /* our blog */
+  .right-row {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 375px) {

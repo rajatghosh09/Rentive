@@ -739,18 +739,6 @@
   <script src="lib/counterup/counterup.min.js"></script>
 
   <script>
-    // testimonials js
-    var swiper = new Swiper(".mySwiper", {
-      centeredSlides: true,
-      slidesPerView: 3,
-      initialSlide: 2,
-
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-      },
-    });
 
     $('[data-toggle="counter-up"]').counterUp({
       delay: 10,
@@ -760,6 +748,7 @@
     // logo div copy
     var copy = document.querySelector(".logos-slide").cloneNode(true);
     document.querySelector(".logos").appendChild(copy);
+
   </script>
 
   <script>
@@ -796,11 +785,6 @@
           swiper = new Swiper('.mySwiper', {
             slidesPerView: 1,
             initialSlide: 2,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-              dynamicBullets: true,
-            }
           });
         }
         else if (!isMobile && swiper) {
@@ -817,11 +801,6 @@
         initSwiper();
       });
     });
-
-
-    // logo div copy
-    var copy = document.querySelector(".logos-slide").cloneNode(true);
-    document.querySelector(".logos").appendChild(copy);
 
   </script>
 </body>
