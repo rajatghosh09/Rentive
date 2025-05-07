@@ -217,6 +217,8 @@ header {
   min-height: 567px;
   display: flex;
   align-items: center;
+
+  /* padding: 50px 0; */
 }
 
 .banner-img::before {
@@ -351,7 +353,7 @@ header {
 
 .about-us-right {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
 }
 
@@ -1075,13 +1077,12 @@ footer .row {
 
 /* responsive start */
 
-@media (ma) {}
-
 @media (max-width:1125px) {
   .content-heading {
     width: 211px;
   }
 }
+
 
 @media (max-width: 991px) {
   .navbox .navlinks {

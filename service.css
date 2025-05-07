@@ -665,10 +665,29 @@ footer .row {
   }
 
   .left-column {
-    max-width: 30%;
-    flex: 0 0 30%;
+    max-width: 100%;
+    flex: 0 0 100%;
     padding: 0;
+    text-align: center;
+  }
 
+  .right-column{
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .line{
+    max-width: 100%;
+  }
+
+  .left-column h4,
+  .right-column h2 {
+    font-size: 25px;
+  }
+
+  .service-list{
+    max-width: 100%;
   }
 
   .description p {

@@ -1520,6 +1520,11 @@ footer {
         margin-bottom: 40px;
     }
 
+    /* right banner calender */
+    input[type="date"] {
+        width: 43vw;
+    }
+
     /* about us */
     .about-us-details p {
         max-width: 440px;
