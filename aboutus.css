@@ -1632,8 +1632,11 @@ footer .row {
 
   .about-us-details p,
   .our-mission-details p {
-    /* margin-left: 28px; */
+    font-size: 15px;
     text-align: center;
+  }
+  .upper .img6{
+    width: 320px;
   }
 
   /* book a car */
@@ -1694,6 +1697,27 @@ footer .row {
     padding-right: 220px;
   }
 
+.about-us-right{
+  flex-direction: column;
+}
+.upper .img6{
+  width: 280px;
+}
+.Our-committed-details p {
+  text-align: center;
+}
+.choose-us-row .col25{
+  max-width: 100%;
+  flex: 0 0 100%;
+  
+}
+.choose-us-left,
+ .choose-us-right {
+  text-align: center;
+ }
+
+
+
 
 
   .Our-committed-heading {
@@ -1739,7 +1763,7 @@ footer .row {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .banner-content h1 {
     font-size: 40px;
     padding-right: 300px;
@@ -1773,4 +1797,8 @@ footer .row {
   .book-car-content {
     top: 4px;
   }
+  .about-us-heading {
+    font-size: 20px;
+  }
+  
 }
