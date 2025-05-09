@@ -29,7 +29,6 @@ body {
   font-size: 16px;
   color: var(--primary-white);
   font-weight: 400;
-
 }
 
 a {
@@ -39,8 +38,6 @@ a {
 li {
   list-style: none;
 }
-
-
 
 img {
   max-width: 100%;
@@ -1077,12 +1074,16 @@ footer .row {
 
 /* responsive start */
 
-@media (max-width:1125px) {
+@media (max-width: 1125px) {
   .content-heading {
     width: 211px;
   }
+  .our-mission-rightup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 
 @media (max-width: 991px) {
   .navbox .navlinks {
@@ -1121,7 +1122,6 @@ footer .row {
     transform: rotate(50deg) translateY(10px);
     background: var(--primary-gold2);
   }
-
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -1176,11 +1176,14 @@ footer .row {
 
   .logo-container {
     max-width: 925px;
-
   }
 
   .logo {
     margin-top: 40px;
+  }
+  .our-mission-details {
+    display: flex;
+    flex-direction: column;
   }
 
   /* choose us */
@@ -1222,7 +1225,6 @@ footer .row {
   .content-heading {
     width: 100%;
   }
-
 
   /* book a car */
   .book-car-content {
@@ -1313,23 +1315,24 @@ footer .row {
     text-align: center;
   }
 
-  .features {
-    margin-left: 200px;
+  .our-mission-details .features {
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .Our-committed-details .features {
-    margin-left: 65px;
+    margin: 0 auto;
+    width: 540px;
+    margin-top: 20px;
   }
 
   .Our-committed-details p {
-    margin-left: 60px;
+    margin: 0 auto;
   }
 
   .our-mission-details p,
   .about-us-details p {
-    display: flex;
-    justify-content: center;
-    margin-left: 220px;
+    margin: 0 auto;
     font-size: 18px;
   }
 
@@ -1355,6 +1358,7 @@ footer .row {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
   }
 
   .our-mission-rightup {
@@ -1424,11 +1428,11 @@ footer .row {
 
 @media (max-width: 767px) {
   .banner-content h1 {
-    font-size: 100px;
+    font-size: 80px;
   }
 
   .banner-content p {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .about-us-details p,
@@ -1439,10 +1443,6 @@ footer .row {
   .about-us-details .sub-heading,
   .our-mission-details .sub-heading {
     text-align: center;
-  }
-
-  .our-mission-details .features {
-    margin-left: 100px;
   }
 
   .sub-heading {
@@ -1503,8 +1503,12 @@ footer .row {
 
   /* our blog & aboutus*/
   .our-blog-details .sub-heading,
-  .about-us-details p {
-    max-width: 460px;
+  .about-us-details p,
+  .our-mission-details p,
+  .Our-committed-details p {
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
   }
 
   .container-content p,
@@ -1512,13 +1516,28 @@ footer .row {
   .host-banner p {
     font-size: 18px;
   }
-
 }
 
 @media (max-width: 600px) {
   .testimonials-row .col33 {
     max-width: 100%;
     flex: 0 0 100%;
+  }
+
+  .Our-committed-details .sub-heading {
+    text-align: center;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .Our-committed-details .features {
+    text-align: center;
+  }
+
+  .Our-committed-details p {
+    text-align: center;
   }
 }
 
@@ -1535,13 +1554,11 @@ footer .row {
 
   .about-us-details p,
   .our-mission-details p {
-    margin-left: 28px;
+    margin: 0 auto;
   }
-
 
   .our-mission-details .features {
     text-align: center;
-    margin: 0 auto;
   }
 
   .sub-heading {
@@ -1568,7 +1585,6 @@ footer .row {
   .service-details span {
     margin: 15px 0;
   }
-
 
   /* book car */
   .book-car-content {
@@ -1611,6 +1627,25 @@ footer .row {
   .down img {
     max-width: 100%;
   }
+  .Our-committed-details .features {
+    width: 380px;
+  }
+
+  .Our-committed-details .sub-heading {
+    text-align: center;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .Our-committed-details .features {
+    text-align: center;
+  }
+
+  .Our-committed-details p {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1623,20 +1658,43 @@ footer .row {
     font-size: 20px;
     padding-right: 220px;
   }
-
+  .about-us-right {
+    flex-direction: column;
+  }
   .about-us-details .sub-heading,
   .our-mission-details .sub-heading {
     /* margin-left: -220px; */
     text-align: center;
+    width: 280px;
   }
 
   .about-us-details p,
   .our-mission-details p {
-    font-size: 15px;
+    font-size: 13px;
+    max-width: 350px;
     text-align: center;
   }
-  .upper .img6{
+  .upper .img6 {
     width: 320px;
+  }
+  .Our-committed-details .features {
+    width: 303px;
+  }
+
+  .Our-committed-details .sub-heading {
+    text-align: center;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .Our-committed-details .features {
+    text-align: center;
+  }
+
+  .Our-committed-details p {
+    text-align: center;
   }
 
   /* book a car */
@@ -1697,36 +1755,37 @@ footer .row {
     padding-right: 220px;
   }
 
-.about-us-right{
-  flex-direction: column;
-}
-.upper .img6{
-  width: 280px;
-}
-.Our-committed-details p {
-  text-align: center;
-}
-.choose-us-row .col25{
-  max-width: 100%;
-  flex: 0 0 100%;
-  
-}
-.choose-us-left,
- .choose-us-right {
-  text-align: center;
- }
+  .about-us-right {
+    flex-direction: column;
+  }
+  .upper .img6 {
+    width: 280px;
+  }
+  .Our-committed-details p {
+    text-align: center;
+  }
+  .choose-us-row .col25 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .choose-us-left,
+  .choose-us-right {
+    text-align: center;
+  }
 
-
-
-
-
-  .Our-committed-heading {
-    font-size: 20px;
+  .Our-committed-heading{
+    font-size: 25px;
+  }
+  .our-mission-heading{
+    font-size: 25px;
+  }
+  .about-us-heading{
+    font-size: 25px;
   }
 
   .Our-committed-details p,
   .Our-committed-details .features {
-    margin-left: 5px;
+    width: 202px;
   }
 
   .img1,
@@ -1750,7 +1809,7 @@ footer .row {
   }
 
   .book-car-btn .cmn-btn {
-    padding: 11px 22px
+    padding: 11px 22px;
   }
 
   .logo-container {
@@ -1800,5 +1859,4 @@ footer .row {
   .about-us-heading {
     font-size: 20px;
   }
-  
 }
