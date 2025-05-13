@@ -926,7 +926,7 @@ footer .row {
 
   .banner-content {
     text-align: center;
-    display: ruby;
+    margin-left: -156px;
   }
 
   .work-row .howitwork-all {
@@ -1047,24 +1047,26 @@ footer .row {
 
 @media (max-width: 991px) {
   .banner-content h1 {
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
-  }
-
-  .banner-content p {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner-content h1 {
-    font-size: 100px;
   }
 
   .banner-content p {
     font-size: 40px;
   }
+}
 
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 70px;
+  }
+
+  .banner-content p {
+    font-size: 35px;
+  }
+.banner-content{
+  margin-left: -260px;
+}
   .work-details {
     text-align: center;
   }
@@ -1083,6 +1085,9 @@ footer .row {
   .banner-content p {
     font-size: 30px;
     padding-right: 120px;
+  }
+  .banner-content{
+    margin-left: -290px;
   }
 }
 
@@ -1120,13 +1125,16 @@ footer .row {
 
 @media (max-width: 375px) {
   .banner-content h1 {
-    font-size: 50px;
-    padding-right: 250px;
+    font-size: 40px;
+    
   }
 
   .banner-content p {
     font-size: 18px;
-    padding-right: 220px;
+    
+  }
+  .banner-content{
+    margin-left: -315px;
   }
 }
 
@@ -1287,7 +1295,7 @@ footer .row {
 
   /* book a car */
   .book-car-btn .cmn-btn {
-    padding: 8px 18px;
+    padding: 5px 18px;
   }
 
   .book-call .call {
@@ -1316,7 +1324,7 @@ footer .row {
   }
 
   .book-car-btn .cmn-btn {
-    padding: 11px 22px;
+    padding: 4px 22px;
   }
 }
 
