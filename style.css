@@ -184,6 +184,11 @@ header {
     cursor: pointer;
 }
 
+.login i:hover{
+    color: #a98306;
+    transition: 0.3s all ease-in-out;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -363,9 +368,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .banner-btn:hover {
-    color: var(--primary-black);
-    background-color: var(--primary-white);
-    transition: 0.5s ease-in-out;
+    background-color: #a98306;
+    transition: 0.3s ease-in-out;
 }
 
 
