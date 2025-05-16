@@ -184,7 +184,7 @@ header {
     cursor: pointer;
 }
 
-.login i:hover{
+.login i:hover {
     color: #a98306;
     transition: 0.3s all ease-in-out;
 }
@@ -1694,7 +1694,7 @@ footer {
     }
 
     .content-heading {
-        width: 100%;
+        width: 92%;
     }
 
     /* .testimonials-row {
@@ -1905,6 +1905,12 @@ footer {
         padding: 10px 15px;
     }
 
+    /* choose us */
+    .left-boxes,
+    .right-boxes {
+        padding: 33px 25px;
+    }
+
     /* service section */
     .service-details p {
         font-size: 10px;
@@ -1917,6 +1923,10 @@ footer {
     .testimonials-row .col33 {
         max-width: 50%;
         flex: 0 0 50%;
+    }
+
+    .content-heading {
+        width: 62%;
     }
 
     /* book car */
@@ -2112,6 +2122,11 @@ footer {
         width: 80vw;
     }
 
+    /* testimonails */
+    .content-heading {
+        width: 42%;
+    }
+
     /* car */
     .car-img img {
         left: 5px;
@@ -2201,6 +2216,13 @@ footer {
         font-size: 20px;
     }
 
+
+    /* testimonals */
+    .content-heading {
+        width: 100%;
+    }
+
+
     /* logo */
     .logo-container {
         max-width: 370px;
@@ -2248,7 +2270,7 @@ footer {
     /* choose us */
     .left-boxes p,
     .right-boxes p {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     /* we offer */
@@ -2264,6 +2286,11 @@ footer {
 }
 
 @media (max-width:375px) {
+
+    /* testimonials */
+    .content-heading {
+        width: 62%;
+    }
 
     /* logo */
     .logo-container {
@@ -2339,6 +2366,42 @@ footer {
 }
 
 @media (max-width:320px) {
+
+    /* banner section */
+    .left-banner-content span {
+        font-size: 28px;
+    }
+
+    /* banner right section */
+    .right-banner-content {
+        padding: 25px 10px 35px 10px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .second-row i {
+        margin-left: 0;
+    }
+
+    #country {
+        font-size: 14px;
+    }
+
+    .location {
+        padding: 15px 14px 15px 14px
+    }
+
+    .banner-btn {
+        padding: 17px 0;
+    }
+
+    /* testimonials */
+    .content-heading {
+        width: 32%;
+    }
+
 
     /* book a car */
     .book-car-content {
