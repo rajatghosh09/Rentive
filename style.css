@@ -2417,4 +2417,9 @@ footer {
         padding: 1px 12px;
         font-size: 12px;
     }
+
+    /* host car */
+    .host-woman {
+        width: 175px;
+    }
 }
