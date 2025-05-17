@@ -254,7 +254,6 @@ header {
 .banner-content p {
   font-size: 48px;
   margin-top: 5px;
-  min-width: 599px;
   color: var(--primary-white);
   font-family: "Lora", serif;
 }
@@ -926,8 +925,14 @@ footer .row {
 
   .banner-content {
     text-align: center;
-    margin-left: -156px;
+    
   }
+    .content-heading {
+    width: 92%;
+  }
+}
+
+
 
   .work-row .howitwork-all {
     display: block;
@@ -1011,7 +1016,7 @@ footer .row {
     display: block;
     margin: 8px 0;
   }
-}
+
 
 @media (max-width: 1399px) {
   .banner-content h1 {
@@ -1047,26 +1052,24 @@ footer .row {
 
 @media (max-width: 991px) {
   .banner-content h1 {
-    font-size: 80px;
+    font-size: 95px;
     text-align: center;
   }
 
   .banner-content p {
-    font-size: 40px;
+    font-size: 70px;
   }
 }
 
 @media (max-width: 768px) {
   .banner-content h1 {
-    font-size: 70px;
+    font-size: 80px;
   }
 
   .banner-content p {
-    font-size: 35px;
+    font-size: 54px;
   }
-.banner-content{
-  margin-left: -260px;
-}
+
   .work-details {
     text-align: center;
   }
@@ -1074,32 +1077,36 @@ footer .row {
   .book-car-btn .cmn-btn {
     padding: 10px 28px;
   }
+  .content-heading {
+    width: 62%;
+  }
 }
 
 @media (max-width: 575px) {
   .banner-content h1 {
-    font-size: 70px;
-    padding-right: 120px;
+    font-size: 60px;
+   
   }
 
   .banner-content p {
-    font-size: 30px;
-    padding-right: 120px;
+    font-size: 41px;
+    
   }
-  .banner-content{
-    margin-left: -290px;
+  .content-heading {
+    width: 42%;
   }
+  
 }
 
 @media (max-width: 480px) {
   .banner-content h1 {
     font-size: 50px;
-    padding-right: 220px;
+    
   }
 
   .banner-content p {
-    font-size: 20px;
-    padding-right: 220px;
+    font-size: 33px;
+    
   }
 
   .work-details .sub-heading {
@@ -1119,7 +1126,9 @@ footer .row {
     max-width: 300px;
     margin: 8px auto;
   }
-
+.content-heading {
+    width: 100%;
+  }
 
 }
 
@@ -1130,12 +1139,13 @@ footer .row {
   }
 
   .banner-content p {
-    font-size: 18px;
+    font-size: 25px;
     
   }
-  .banner-content{
-    margin-left: -315px;
+  .content-heading {
+    width: 62%;
   }
+  
 }
 
 @media (max-width: 1024px) {
@@ -1332,6 +1342,9 @@ footer .row {
   .col25 {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+  .content-heading {
+    width: 32%;
   }
 }
 

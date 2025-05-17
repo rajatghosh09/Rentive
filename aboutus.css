@@ -262,7 +262,6 @@ header {
 .banner-content p {
   font-size: 40px;
   margin-top: 5px;
-  min-width: 599px;
   color: var(--primary-white);
   font-family: "Lora", serif;
 }
@@ -1281,12 +1280,6 @@ footer .row {
     text-align: center;
   }
 
-  .upper .img5 {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 0;
-  }
-
   .Our-committed-details {
     padding: 20px 0;
   }
@@ -1371,10 +1364,6 @@ footer .row {
     margin-top: 40px;
   }
 
-  .Our-committed-heading {
-    margin: auto;
-  }
-
   .about-us,
   .our-mission {
     margin-top: 50px;
@@ -1417,12 +1406,15 @@ footer .row {
 
 @media (max-width: 991px) {
   .banner-content h1 {
-    font-size: 100px;
+    font-size: 90px;
     text-align: center;
   }
 
   .banner-content p {
-    font-size: 50px;
+    font-size: 45px;
+  }
+  .content-heading {
+    width: 92%;
   }
 }
 
@@ -1432,7 +1424,7 @@ footer .row {
   }
 
   .banner-content p {
-    font-size: 30px;
+    font-size: 47px;
   }
 
   .about-us-details p,
@@ -1451,6 +1443,9 @@ footer .row {
 
   .features li {
     font-size: 15px;
+  }
+  .content-heading {
+    width: 62%;
   }
 
   .img1,
@@ -1539,17 +1534,21 @@ footer .row {
   .Our-committed-details p {
     text-align: center;
   }
+  .upper .img5 {
+    display: none;
+  }
+  .Our-committed-heading {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 575px) {
   .banner-content h1 {
     font-size: 70px;
-    padding-right: 120px;
   }
 
   .banner-content p {
-    font-size: 30px;
-    padding-right: 120px;
+    font-size: 36px;
   }
 
   .about-us-details p,
@@ -1646,17 +1645,18 @@ footer .row {
   .Our-committed-details p {
     margin: 0 auto;
   }
+  .content-heading {
+    width: 42%;
+  }
 }
 
 @media (max-width: 480px) {
   .banner-content h1 {
     font-size: 50px;
-    padding-right: 220px;
   }
 
   .banner-content p {
-    font-size: 20px;
-    padding-right: 220px;
+    font-size: 29px;
   }
   .about-us-right {
     flex-direction: column;
@@ -1695,6 +1695,9 @@ footer .row {
 
   .Our-committed-details p {
     text-align: center;
+  }
+  .content-heading {
+    width: 100%;
   }
 
   /* book a car */
@@ -1747,12 +1750,10 @@ footer .row {
 @media (max-width: 375px) {
   .banner-content h1 {
     font-size: 50px;
-    padding-right: 250px;
   }
 
   .banner-content p {
-    font-size: 18px;
-    padding-right: 220px;
+    font-size: 23px;
   }
 
   .about-us-right {
@@ -1773,13 +1774,13 @@ footer .row {
     text-align: center;
   }
 
-  .Our-committed-heading{
+  .Our-committed-heading {
     font-size: 25px;
   }
-  .our-mission-heading{
+  .our-mission-heading {
     font-size: 25px;
   }
-  .about-us-heading{
+  .about-us-heading {
     font-size: 25px;
   }
 
@@ -1793,6 +1794,9 @@ footer .row {
   .img3,
   .img4 {
     max-width: 120px;
+  }
+  .content-heading {
+    width: 62%;
   }
 
   /* book car */
@@ -1825,12 +1829,10 @@ footer .row {
 @media (max-width: 340px) {
   .banner-content h1 {
     font-size: 40px;
-    padding-right: 300px;
   }
 
   .banner-content p {
-    font-size: 16px;
-    padding-right: 320px;
+    font-size: 20px;
   }
 
   .sub-heading {
@@ -1858,5 +1860,8 @@ footer .row {
   }
   .about-us-heading {
     font-size: 20px;
+  }
+  .content-heading {
+    width: 32%;
   }
 }
