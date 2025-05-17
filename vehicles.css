@@ -136,38 +136,30 @@ input[type="checkbox"] {
 
 input[type=range] {
     width: 100%;
-    /* -ms-appearance: none; */
-    /* -moz-appearance: none; */
-    /* -webkit-appearance: none; */
-    /* appearance: none; */
-    outline: none;
-    cursor: pointer;
-    display: block;
-    position: relative;
 }
 
-input[type=range]::before,
-input[type=range]::after {
-    display: inline-block;
-    position: absolute;
-
+.left {
+    float: left;
 }
 
-input[type=range]::before {
-    content: attr(min);
-    top: 15px;
+.right {
+    float: right;
 }
 
-input[type=range]::after {
-    content: attr(max);
-    right: 0;
-    top: 15px;
+.slider:hover {
+    opacity: 1;
 }
+
+#textDisplay {
+    display: flex;
+    justify-content: center;
+}
+
 
 .filter-btn {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .filter-btn .clear {
@@ -327,7 +319,7 @@ input[type=range]::after {
         /* flex: 0 0 100%; */
     }
 
-    .search-section{
+    .search-section {
         gap: 15px;
     }
 
@@ -373,16 +365,17 @@ input[type=range]::after {
     }
 
     /* left section  */
-    .section-heading span{
+    .section-heading span {
         font-size: 15px;
     }
 
     /* search section icon top bar */
-    .item-icons i{
+    .item-icons i {
         font-size: 18px;
     }
 
-    #show, #short {
+    #show,
+    #short {
         padding: 5px;
     }
 
@@ -391,51 +384,53 @@ input[type=range]::after {
 @media (max-width:650px) {
 
     /* find car */
-    .car-search-details p{
+    .car-search-details p {
         width: 450px;
         text-align: center;
         margin: 0 auto;
     }
 
-    .search-input{
+    .search-input {
         width: 450px;
     }
 
     /* car select */
-    .car-select{
+    .car-select {
         min-height: 830px;
     }
-    
+
 
     /* topbar */
-    .top-bar{
+    .top-bar {
         flex-direction: column;
         gap: 10px;
     }
-    .car-select-row .col25{
+
+    .car-select-row .col25 {
         max-width: 30%;
         flex: 0 0 30%;
     }
 
-    .car-select-row .col75{
+    .car-select-row .col75 {
         max-width: 70%;
         flex: 0 0 70%;
     }
 
-    .find-car-collection{
+    .find-car-collection {
         height: 660px;
         overflow-y: scroll;
     }
 
     /* left section */
-    .section-heading span{
+    .section-heading span {
         font-size: 12px;
     }
 }
 
 @media (max-width:575px) {
+
     /* left section */
-    .left-section img{
+    .left-section img {
         width: 100%;
     }
 
@@ -448,22 +443,22 @@ input[type=range]::after {
         min-height: 1850px;
     }
 
-    .find-car-collection .col33{
+    .find-car-collection .col33 {
         max-width: 100%;
         flex: 0 0 100%;
     }
 
-    .car-select-row .col25{
+    .car-select-row .col25 {
         max-width: 100%;
         flex: 0 0 100%;
     }
 
-    .car-select-row .col75{
+    .car-select-row .col75 {
         max-width: 100%;
         flex: 0 0 100%;
     }
 
-    .find-car-collection{
+    .find-car-collection {
         height: 783px;
         overflow-y: scroll;
     }
@@ -472,7 +467,7 @@ input[type=range]::after {
         font-size: 20px;
     }
 
-    .collection-items-content .rating{
+    .collection-items-content .rating {
         font-size: 15px;
     }
 
@@ -481,7 +476,7 @@ input[type=range]::after {
         /* margin: 0 auto; */
     }
 
-    .collection-items-content .details{
+    .collection-items-content .details {
         text-align: center;
         display: block;
     }
@@ -489,16 +484,16 @@ input[type=range]::after {
 
 
 @media (max-width:480px) {
-    .car-search-details p{
+    .car-search-details p {
         font-size: 18px;
         width: 320px;
     }
 
-    .search-input{
+    .search-input {
         width: 320px;
     }
 
-    .filters #show{
+    .filters #show {
         width: 100%;
     }
 
@@ -506,7 +501,7 @@ input[type=range]::after {
         padding: 20px 30px;
     }
 
-    .filters{
+    .filters {
         flex-direction: column;
     }
 }
@@ -516,7 +511,7 @@ input[type=range]::after {
         width: 245px;
     }
 
-    .car-select-row .col75{
+    .car-select-row .col75 {
         padding: 0;
     }
 
@@ -527,7 +522,7 @@ input[type=range]::after {
 
 @media (max-width: 320px) {
 
-    .find-car{
+    .find-car {
         display: flex;
         justify-content: center;
         align-items: center;

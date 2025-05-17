@@ -92,7 +92,7 @@
             </div>
         </section>
 
-        <!-- collection -->
+        <!-- collection and left section -->
         <section class="car-select">
             <div class="container">
                 <div class="row car-select-row">
@@ -103,7 +103,12 @@
                                     <span>Show on map</span>
                                     <i class="fa fa-chevron-down"></i>
                                 </div>
-                                <img src="images/vehiclesmap.png" alt="map" />
+                                <!-- <img src="images/vehiclesmap.png" alt="map" /> -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0122013205346!2d88.47180673115834!3d22.57864697694599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02757023e0d4d3%3A0x50236d4275482829!2sBiswa%20Bangla%20Gate!5e0!3m2!1sen!2sin!4v1747464852703!5m2!1sen!2sin"
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
 
                             <div class="left-section">
@@ -111,7 +116,13 @@
                                     <span>Filter Price</span>
                                     <i class="fa fa-chevron-down"></i>
                                 </div>
-                                <input type="range" min="$0" max="$500" value="$250">
+                                <div id="textDisplay">0</div>
+
+                                <div class="range-bar">
+                                    <input type="range" class="slider" id="myRange" min="0" max="500" value="0"
+                                        oninput="updateText()"><span class="left">$0</span><span class="right">$500
+                                    </span>
+                                </div>
                                 <div class="filter-btn">
                                     <a class="clear" href="#">Clear</a>
                                     <a class="apply" href="#">Apply</a>
@@ -511,7 +522,7 @@
 
 
     <!-- js start -->
-     
+
     <!-- hamburger -->
     <script src="script.js"></script>
 
@@ -559,6 +570,15 @@
                 }
             }
         }
+
+
+        // range js
+        function updateText() {
+            var slider = document.getElementById("myRange");
+            var text = document.getElementById("textDisplay");
+            text.textContent = slider.value;
+        }
+
     </script>
 
     <script>
