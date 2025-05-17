@@ -347,6 +347,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="no-results">
+                                No results found.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -552,9 +555,10 @@
     <script>
         const search = () => {
             const searchbox = document.getElementById("search-item").value.toUpperCase();
-            const storeitems = document.getElementById("product-list")
-            const product = document.querySelectorAll(".product")
-            const pname = document.querySelectorAll(".heading")
+            // const storeitems = document.getElementById("product-list");
+            const product = document.querySelectorAll(".product");
+            const pname = document.querySelectorAll(".heading");
+            let found = false;
 
             for (var i = 0; i < pname.length; i++) {
                 let match = product[i].querySelectorAll('.heading')[0];
@@ -564,12 +568,38 @@
 
                     if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
                         product[i].style.display = "";
+                        found = true;
                     } else {
                         product[i].style.display = "none";
                     }
                 }
+                
+                document.getElementById("no-results").style.display = found ? "none" : "block";
             }
         }
+
+
+        // const search = () => {
+        //     const searchBoxValue = document.getElementById("search-item").value.toUpperCase();
+        //     const products = document.querySelectorAll(".product");
+        //     let found = false;
+
+        //     products.forEach(product => {
+        //         const heading = product.querySelector(".heading");
+        //         if (heading) {
+        //             const textValue = heading.textContent || heading.innerHTML;
+        //             if (textValue.toUpperCase().includes(searchBoxValue)) {
+        //                 product.style.display = "";
+        //                 found = true;
+        //             } else {
+        //                 product.style.display = "none";
+        //             }
+        //         }
+        //     });
+
+        //     // Show or hide "no results" message
+        //     document.getElementById("no-results").style.display = found ? "none" : "block";
+        // };
 
 
         // range js

@@ -198,7 +198,6 @@ input[type=range] {
 }
 
 
-
 /* top section */
 .top-bar {
     display: flex;
@@ -293,6 +292,15 @@ input[type=range] {
     font-size: 13px;
 }
 
+/* serach no results */
+#no-results {
+    display: none;
+    text-align: center;
+    width: 57vw;
+    padding: 20px;
+    height: 100vh;
+}
+
 
 /* logo */
 .logo {
@@ -331,6 +339,11 @@ input[type=range] {
         margin: 0 auto;
     }
 
+
+    /* serach no results */
+    #no-results {
+        width: 67vw;
+    }
 }
 
 @media (max-width:1024px) {
@@ -479,6 +492,11 @@ input[type=range] {
     .collection-items-content .details {
         text-align: center;
         display: block;
+    }
+
+    /* serach no results */
+    #no-results {
+        width: 100%;
     }
 }
 
